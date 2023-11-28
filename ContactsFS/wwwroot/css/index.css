@@ -1,0 +1,123 @@
+﻿.body {
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.imagesDiv, .tablesDiv, .buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagesDiv {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.buttonDiv {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.popupUpdateDiv, .popupCreateDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+
+.popupUpdateDiv.active, .popupCreateDiv.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popupUpdateForm, .popupCreateForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.5s all;
+}
+
+.popupUpdateForm.active, .popupCreateForm.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.popupUpdateCloseButton, .popupCreateCloseButton {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+}
+
+.popupLabel {
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.contactsTable {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 40%;
+    max-width: 80%;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    padding: 10px 20px;
+}
+
+th {
+    background: #AFCDE7;
+    color: white;
+}
+
+td {
+    background: #D8E6F3;
+}
+
+.popupButton, .commonButton {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s all;
+}
+
+.popupButton {
+    margin-top: 20px;
+    margin-left: 125px;
+}
+
+.popupButton:hover, .commonButton:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+tr:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.25s all;
+}

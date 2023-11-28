@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactsFS</title>
+</head>
+
+<body class="body">
+    <div class="imagesDiv">
+        <img src="images\Contacts.png" />
+    </div>
+    <div class="tablesDiv">
+        <table class="contactsTable">
+            <tr>
+                <th>Name</th>
+                <th>MobilePhone</th>
+                <th>JobTitle</th>
+                <th>BirthDate</th>
+            </tr>
+        </table>
+    </div>
+    <div class="buttonDiv">
+        <button class="commonButton" id="createButton"> Create </button>
+    </div>
+    <div class="popupUpdateDiv">
+        <form class="popupUpdateForm">
+            <img src="images\RedCross.png" class="popupUpdateCloseButton" />
+            <label class="popupLabel">Name</label>
+            <input type="text" id="nameUpdateInput" />
+            <label class="popupLabel">Mobile Phone</label>
+            <input type="text" id="mobilePhoneUpdateInput" />
+            <label class="popupLabel">Job Title</label>
+            <input type="text" id="jobTitleUpdateInput" />
+            <label class="popupLabel">Birth Date</label>
+            <input type="date" min="1900-01-01" max="2100-01-01" id="birthDateUpdateInput" />
+            <button class="popupButton" id="updateContactButton"> Update </button>
+            <button class="popupButton" id="deleteContactButton"> Delete </button>
+        </form>
+    </div>
+    <div class="popupCreateDiv">
+        <form class="popupCreateForm">
+            <img src="images\RedCross.png" class="popupCreateCloseButton" />
+            <label class="popupLabel">Name</label>
+            <input type="text" id="nameCreateInput" />
+            <label class="popupLabel">Mobile Phone</label>
+            <input type="text" id="mobilePhoneCreateInput" />
+            <label class="popupLabel">Job Title</label>
+            <input type="text" id="jobTitleCreateInput" />
+            <label class="popupLabel">Birth Date</label>
+            <input type="date" min="1900-01-01" max="2100-01-01" id="birthDateCreateInput" />
+            <button class="popupButton" id="confirmCreatingButton"> Confirm </button>
+        </form>
+    </div>
+
+    <script src="js\index.js"></script>
+    <link rel="stylesheet" href="css\index.css">
+</body>
+</html>
